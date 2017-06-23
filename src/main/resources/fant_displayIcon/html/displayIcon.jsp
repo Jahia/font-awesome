@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--@elvariable id="currentNode" type="org.jahia.services.content.JCRNodeWrapper"--%>
 
-<template:addResources type="css" resources="font-awsome.min.css"/>
+<template:addResources type="css" resources="font-awesome.min.css"/>
 
 <c:set var="faIcon" value="${currentNode.properties.faIcon.string}"/>
 <c:set var="faLarger" value="${currentNode.properties.faLarger.string}"/>
