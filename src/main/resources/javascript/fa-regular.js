@@ -1,5 +1,5 @@
 /*!
- * Font Awesome Free 5.0.0 by @fontawesome - http://fontawesome.com
+ * Font Awesome Free 5.0.2 by @fontawesome - http://fontawesome.com
  * License - http://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 (function () {
@@ -30,7 +30,13 @@ var NAMESPACE_IDENTIFIER = '___FONT_AWESOME___';
 
 
 
-
+var PRODUCTION = function () {
+  try {
+    return "production" === 'production';
+  } catch (e) {
+    return false;
+  }
+}();
 
 var oneToTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var oneToTwenty = oneToTen.concat([11, 12, 13, 14, 15, 16, 17, 18, 19, 20]);
@@ -47,11 +53,66 @@ function bunker(fn) {
   try {
     fn();
   } catch (e) {
-    
+    if (!PRODUCTION) {
+      throw e;
+    }
   }
 }
 
-var icons$1 = {
+var w = WINDOW || {};
+
+if (!w[NAMESPACE_IDENTIFIER]) w[NAMESPACE_IDENTIFIER] = {};
+if (!w[NAMESPACE_IDENTIFIER].styles) w[NAMESPACE_IDENTIFIER].styles = {};
+if (!w[NAMESPACE_IDENTIFIER].hooks) w[NAMESPACE_IDENTIFIER].hooks = {};
+if (!w[NAMESPACE_IDENTIFIER].shims) w[NAMESPACE_IDENTIFIER].shims = [];
+
+var namespace = w[NAMESPACE_IDENTIFIER];
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+
+  return target;
+};
+
+function define(prefix, icons) {
+  var normalized = Object.keys(icons).reduce(function (acc, iconName) {
+    var icon = icons[iconName];
+    var expanded = !!icon.icon;
+
+    if (expanded) {
+      acc[icon.iconName] = icon.icon;
+    } else {
+      acc[iconName] = icon;
+    }
+    return acc;
+  }, {});
+
+  if (typeof namespace.hooks.addPack === 'function') {
+    namespace.hooks.addPack(prefix, normalized);
+  } else {
+    namespace.styles[prefix] = _extends({}, namespace.styles[prefix] || {}, normalized);
+  }
+
+  /**
+   * Font Awesome 4 used the prefix of `fa` for all icons. With the introduction
+   * of new styles we needed to differentiate between them. Prefix `fa` is now an alias
+   * for `fas` so we'll easy the upgrade process for our users by automatically defining
+   * this as well.
+   */
+  if (prefix === 'fas') {
+    define('fa', icons);
+  }
+}
+
+var icons = {
   "address-book": [448, 512, [], "f2b9", "M320 320v72c0 13.255-10.745 24-24 24H152c-13.255 0-24-10.745-24-24v-72c0-21.431 14.207-40.266 34.813-46.153l18.064-5.161C193.629 275.884 208.342 280 224 280s30.371-4.116 43.122-11.314l18.064 5.161C305.793 279.734 320 298.569 320 320zm-96-64c35.346 0 64-28.654 64-64s-28.654-64-64-64-64 28.654-64 64 28.654 64 64 64zm192-96v64h20c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-20v64h20c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-20v48c0 26.51-21.49 48-48 48H80c-26.51 0-48-21.49-48-48V48C32 21.49 53.49 0 80 0h288c26.51 0 48 21.49 48 48v48h20c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-20zm-48 298V54a6 6 0 0 0-6-6H86a6 6 0 0 0-6 6v404a6 6 0 0 0 6 6h276a6 6 0 0 0 6-6z"],
   "address-card": [512, 512, [], "f2bb", "M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 336H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h404a6 6 0 0 1 6 6v276a6 6 0 0 1-6 6zm-54-176H300c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12zm0 80H300c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12zm-284-96c0-30.928 25.072-56 56-56s56 25.072 56 56-25.072 56-56 56-56-25.072-56-56zm136 89.857V340c0 6.627-5.373 12-12 12H108c-6.627 0-12-5.373-12-12v-42.143a24 24 0 0 1 17.104-22.988l13.464-4.039C140.186 281.568 157.351 288 176 288s35.814-6.432 49.433-17.17l13.464 4.039A24 24 0 0 1 256 297.857z"],
   "arrow-alt-circle-down": [512, 512, [], "f358", "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm-32-316v116h-67c-10.7 0-16 12.9-8.5 20.5l99 99c4.7 4.7 12.3 4.7 17 0l99-99c7.6-7.6 2.2-20.5-8.5-20.5h-67V140c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12z"],
@@ -169,39 +230,8 @@ var icons$1 = {
   "window-restore": [512, 512, [], "f2d2", "M464 0H144c-26.5 0-48 21.5-48 48v48H48c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h320c26.5 0 48-21.5 48-48v-48h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-96 464H48V256h320v208zm96-96h-48V144c0-26.5-21.5-48-48-48H144V48h320v320z"]
 };
 
-var w = WINDOW || {};
-
-if (!w[NAMESPACE_IDENTIFIER]) w[NAMESPACE_IDENTIFIER] = {};
-if (!w[NAMESPACE_IDENTIFIER].styles) w[NAMESPACE_IDENTIFIER].styles = {};
-if (!w[NAMESPACE_IDENTIFIER].hooks) w[NAMESPACE_IDENTIFIER].hooks = {};
-if (!w[NAMESPACE_IDENTIFIER].shims) w[NAMESPACE_IDENTIFIER].shims = [];
-
-var namespace = w[NAMESPACE_IDENTIFIER];
-
-var _extends = Object.assign || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-
-function define(prefix) {
-  if (typeof namespace.hooks.addPack === 'function') {
-    namespace.hooks.addPack(prefix, icons$1);
-  } else {
-    namespace.styles[prefix] = _extends({}, namespace.styles[prefix] || {}, icons$1);
-  }
-}
-
 bunker(function () {
-  define('far');
+  define('far', icons);
 });
 
 }());
