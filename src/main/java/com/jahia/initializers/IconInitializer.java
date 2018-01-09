@@ -297,6 +297,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-edge",
             "fa-edit",
             "fa-eject",
+            "fa-elementor",
             "fa-ellipsis-h",
             "fa-ellipsis-v",
             "fa-ember",
@@ -858,7 +859,9 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-yelp",
             "fa-yen-sign",
             "fa-yoast",
-            "fa-youtube"};
+            "fa-youtube-square",
+            "fa-youtube"
+    };
 
 
     public List<ChoiceListValue> getChoiceListValues(ExtendedPropertyDefinition epd, String param, List<ChoiceListValue> values, Locale locale, Map<String, Object> context) {
