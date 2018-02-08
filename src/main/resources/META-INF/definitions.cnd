@@ -16,3 +16,4 @@
  - faAnimated (string, choicelist[resourceBundle]) = 'default' autocreated < 'default','fa-spin','fa-pulse','fa-spinner'
  - faRotatedFlipped (string, choicelist[resourceBundle]) = 'default' autocreated < 'default','fa-rotate-90','fa-rotate-180','fa-rotate-270','fa-flip-horizontal','fa-flip-vertical'
 
+[fant:v4shim] > jnt:content, famix:component
