@@ -3,8 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--@elvariable id="currentNode" type="org.jahia.services.content.JCRNodeWrapper"--%>
 
-<template:addResources type="javascript" resources="v4-shims.min.js"/>
-<template:addResources type="javascript" resources="all.min.js"/>
+<template:addResources type="css" resources="all.min.css"/>
+
 
 <c:set var="faIcon" value="${currentNode.properties.faIcon.string}"/>
 <c:set var="faLarger" value="${currentNode.properties.faLarger.string}"/>
