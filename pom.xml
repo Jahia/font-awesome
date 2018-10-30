@@ -93,6 +93,7 @@
                     <instructions>
                         <Jahia-Depends>default</Jahia-Depends>
                         <Jahia-Static-Resources>/css,/webfonts,/javascript,/svgs</Jahia-Static-Resources>
+                        <Export-Package>com.jahia.module.fontawesome</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>
