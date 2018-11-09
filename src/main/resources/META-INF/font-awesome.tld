@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
         version="2.0">
 
-    <description>FontAwesome tahlobs</description>
+    <description>FontAwesome taglibs</description>
     <display-name>font-awesome</display-name>
     <tlib-version>1.0-SNAPSHOT</tlib-version>
     <short-name>fa</short-name>

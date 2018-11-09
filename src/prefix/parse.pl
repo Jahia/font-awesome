@@ -16,19 +16,47 @@ my $data = do {
     <$fh>;
 };
 
+print <<EOH;
+package com.jahia.module.fontawesome;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Prefix {
+    private static final Map<String, String> FA_PREFIX = createMap();
+
+    private static Map<String, String> createMap() {
+        Map<String, String> result = new HashMap<String, String>();
+EOH
+
 my $hashref = decode_json $data;
 
 foreach my $object_name (sort keys %$hashref){
     my $prefix = "fas";
-    my $style = $hashref->{$object_name}->{styles}[-1];
+    my $style = $hashref->{$object_name}->{styles}[0];
     if ($style eq 'brands') {
         $prefix = "fab";
     } elsif ($style eq 'regular') {
         $prefix = "far";
     }
-    print "result.put(\"fa-" . $object_name . "\", \"" . $prefix . "\");\n";
+    print "        result.put(\"fa-" . $object_name . "\", \"" . $prefix . "\");\n";
 }
 
 
+print <<EOF;
+        return Collections.unmodifiableMap(result);
+    }
 
-#class en static final
+     public static String getPrefix(String icon) {
+        String prefix = "fa";
+        if (icon != null) {
+            prefix = FA_PREFIX.get(icon);
+        }
+        if (prefix.length() == 0) {
+            prefix = "fa";
+        }
+        return prefix;
+    }
+}
+EOF
