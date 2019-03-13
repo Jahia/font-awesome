@@ -3,43 +3,43 @@
  * =                   JAHIA'S DUAL LICENSING - IMPORTANT INFORMATION                       =
  * ==========================================================================================
  *
- *                                 http://www.jahia.com
+ * http://www.jahia.com
  *
- *     Copyright (C) 2002-2018 Jahia Solutions Group SA. All rights reserved.
+ * Copyright (C) 2002-2018 Jahia Solutions Group SA. All rights reserved.
  *
- *     THIS FILE IS AVAILABLE UNDER TWO DIFFERENT LICENSES:
- *     1/GPL OR 2/JSEL
+ * THIS FILE IS AVAILABLE UNDER TWO DIFFERENT LICENSES:
+ * 1/GPL OR 2/JSEL
  *
- *     1/ GPL
- *     ==================================================================================
+ * 1/ GPL
+ * ==================================================================================
  *
- *     IF YOU DECIDE TO CHOOSE THE GPL LICENSE, YOU MUST COMPLY WITH THE FOLLOWING TERMS:
+ * IF YOU DECIDE TO CHOOSE THE GPL LICENSE, YOU MUST COMPLY WITH THE FOLLOWING TERMS:
  *
- *     This program is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
- *     This program is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *     GNU General Public License for more details.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
  *
- *     You should have received a copy of the GNU General Public License
- *     along with this program. If not, see <http://www.gnu.org/licenses/>.
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  *
- *     2/ JSEL - Commercial and Supported Versions of the program
- *     ===================================================================================
+ * 2/ JSEL - Commercial and Supported Versions of the program
+ * ===================================================================================
  *
- *     IF YOU DECIDE TO CHOOSE THE JSEL LICENSE, YOU MUST COMPLY WITH THE FOLLOWING TERMS:
+ * IF YOU DECIDE TO CHOOSE THE JSEL LICENSE, YOU MUST COMPLY WITH THE FOLLOWING TERMS:
  *
- *     Alternatively, commercial and supported versions of the program - also known as
- *     Enterprise Distributions - must be used in accordance with the terms and conditions
- *     contained in a separate written agreement between you and Jahia Solutions Group SA.
+ * Alternatively, commercial and supported versions of the program - also known as
+ * Enterprise Distributions - must be used in accordance with the terms and conditions
+ * contained in a separate written agreement between you and Jahia Solutions Group SA.
  *
- *     If you are unsure which license is appropriate for your use,
- *     please contact the sales department at sales@jahia.com.
+ * If you are unsure which license is appropriate for your use,
+ * please contact the sales department at sales@jahia.com.
  */
 package com.jahia.initializers;
 
@@ -153,6 +153,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-baby-carriage",
             "fa-backspace",
             "fa-backward",
+            "fa-bacon",
             "fa-balance-scale",
             "fa-ban",
             "fa-band-aid",
@@ -200,6 +201,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-bong",
             "fa-book",
             "fa-book-dead",
+            "fa-book-medical",
             "fa-book-open",
             "fa-book-reader",
             "fa-bookmark",
@@ -209,6 +211,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-boxes",
             "fa-braille",
             "fa-brain",
+            "fa-bread-slice",
             "fa-briefcase",
             "fa-briefcase-medical",
             "fa-broadcast-tower",
@@ -284,6 +287,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-check-circle",
             "fa-check-double",
             "fa-check-square",
+            "fa-cheese",
             "fa-chess",
             "fa-chess-bishop",
             "fa-chess-board",
@@ -306,6 +310,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-circle",
             "fa-circle-notch",
             "fa-city",
+            "fa-clinic-medical",
             "fa-clipboard",
             "fa-clipboard-check",
             "fa-clipboard-list",
@@ -339,6 +344,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-comment-alt",
             "fa-comment-dollar",
             "fa-comment-dots",
+            "fa-comment-medical",
             "fa-comment-slash",
             "fa-comments",
             "fa-comments-dollar",
@@ -378,6 +384,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-crosshairs",
             "fa-crow",
             "fa-crown",
+            "fa-crutch",
             "fa-css3",
             "fa-css3-alt",
             "fa-cube",
@@ -450,6 +457,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-ebay",
             "fa-edge",
             "fa-edit",
+            "fa-egg",
             "fa-eject",
             "fa-elementor",
             "fa-ellipsis-h",
@@ -550,7 +558,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-font-awesome",
             "fa-font-awesome-alt",
             "fa-font-awesome-flag",
-            "fa-font-awesome-logo-full",
+            "fa-font-awesome-logo-full"
             "fa-fonticons",
             "fa-fonticons-fi",
             "fa-football-ball",
@@ -643,12 +651,14 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-hacker-news",
             "fa-hacker-news-square",
             "fa-hackerrank",
+            "fa-hamburger",
             "fa-hammer",
             "fa-hamsa",
             "fa-hand-holding",
             "fa-hand-holding-heart",
             "fa-hand-holding-usd",
             "fa-hand-lizard",
+            "fa-hand-middle-finger",
             "fa-hand-paper",
             "fa-hand-peace",
             "fa-hand-point-down",
@@ -663,6 +673,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-hands-helping",
             "fa-handshake",
             "fa-hanukiah",
+            "fa-hard-hat",
             "fa-hashtag",
             "fa-hat-wizard",
             "fa-haykal",
@@ -692,6 +703,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-hospital-alt",
             "fa-hospital-symbol",
             "fa-hot-tub",
+            "fa-hotdog",
             "fa-hotel",
             "fa-hotjar",
             "fa-hourglass",
@@ -704,6 +716,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-html5",
             "fa-hubspot",
             "fa-i-cursor",
+            "fa-ice-cream",
             "fa-icicles",
             "fa-id-badge",
             "fa-id-card",
@@ -756,6 +769,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-language",
             "fa-laptop",
             "fa-laptop-code",
+            "fa-laptop-medical",
             "fa-laravel",
             "fa-lastfm",
             "fa-lastfm-square",
@@ -898,6 +912,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-outdent",
             "fa-page4",
             "fa-pagelines",
+            "fa-pager",
             "fa-paint-brush",
             "fa-paint-roller",
             "fa-palette",
@@ -926,6 +941,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-pencil-ruler",
             "fa-penny-arcade",
             "fa-people-carry",
+            "fa-pepper-hot",
             "fa-percent",
             "fa-percentage",
             "fa-periscope",
@@ -947,6 +963,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-pinterest",
             "fa-pinterest-p",
             "fa-pinterest-square",
+            "fa-pizza-slice",
             "fa-place-of-worship",
             "fa-plane",
             "fa-plane-arrival",
@@ -1257,6 +1274,8 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-transgender-alt",
             "fa-trash",
             "fa-trash-alt",
+            "fa-trash-restore",
+            "fa-trash-restore-alt",
             "fa-tree",
             "fa-trello",
             "fa-tripadvisor",
@@ -1309,6 +1328,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-user-md",
             "fa-user-minus",
             "fa-user-ninja",
+            "fa-user-nurse",
             "fa-user-plus",
             "fa-user-secret",
             "fa-user-shield",
