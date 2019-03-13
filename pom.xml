@@ -7,7 +7,7 @@
 
                                     http://www.jahia.com
 
-        Copyright (C) 2002-2018 Jahia Solutions Group SA. All rights reserved.
+        Copyright (C) 2002-2019 Jahia Solutions Group SA. All rights reserved.
 
         THIS FILE IS AVAILABLE UNDER TWO DIFFERENT LICENSES:
         1/GPL OR 2/JSEL
@@ -28,7 +28,7 @@
         GNU General Public License for more details.
 
         You should have received a copy of the GNU General Public License
-        along with this program. If not, see <http://www.gnu.org/licenses />.
+        along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
         2/ JSEL - Commercial and Supported Versions of the program
@@ -54,7 +54,7 @@
     <groupId>org.jahia.modules</groupId>
     <artifactId>font-awesome</artifactId>
     <name>Font Awesome</name>
-    <version>5.5.1-SNAPSHOT</version>
+    <version>5.6.4-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <description>This is the custom module (Font Awesome) for running on a Digital Factory server.</description>
     <scm>
