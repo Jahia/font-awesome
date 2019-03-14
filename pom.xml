@@ -54,14 +54,14 @@
     <groupId>org.jahia.modules</groupId>
     <artifactId>font-awesome</artifactId>
     <name>Font Awesome</name>
-    <version> 5.7.2</version>
+    <version>5.7.2</version>
     <packaging>bundle</packaging>
     <description>This is the custom module (Font Awesome) for running on a Digital Factory server.</description>
     <scm>
         <connection>scm:git:git@github.com:Jahia/font-awesome.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/font-awesome.git</developerConnection>
         <url>https://github.com/Jahia/font-awesome</url>
-      <tag>font-awesome- 5.7.2</tag>
+      <tag>font-awesome-5.7.2</tag>
   </scm>
 
     <properties>
