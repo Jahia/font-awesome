@@ -28,7 +28,7 @@
         GNU General Public License for more details.
 
         You should have received a copy of the GNU General Public License
-        along with this program. If not, see <http://www.gnu.org/licenses/>.
+        along with this program. If not, see <http://www.gnu.org/licenses />.
 
 
         2/ JSEL - Commercial and Supported Versions of the program
@@ -54,14 +54,14 @@
     <groupId>org.jahia.modules</groupId>
     <artifactId>font-awesome</artifactId>
     <name>Font Awesome</name>
-    <version>5.6.4-SNAPSHOT</version>
+    <version> 5.7.2</version>
     <packaging>bundle</packaging>
     <description>This is the custom module (Font Awesome) for running on a Digital Factory server.</description>
     <scm>
         <connection>scm:git:git@github.com:Jahia/font-awesome.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/font-awesome.git</developerConnection>
         <url>https://github.com/Jahia/font-awesome</url>
-      <tag>HEAD</tag>
+      <tag>font-awesome- 5.7.2</tag>
   </scm>
 
     <properties>
