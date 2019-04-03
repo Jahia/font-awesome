@@ -1,46 +1,3 @@
-/*
- * ==========================================================================================
- * =                   JAHIA'S DUAL LICENSING - IMPORTANT INFORMATION                       =
- * ==========================================================================================
- *
- *                                 http://www.jahia.com
- *
- *     Copyright (C) 2002-2019 Jahia Solutions Group SA. All rights reserved.
- *
- *     THIS FILE IS AVAILABLE UNDER TWO DIFFERENT LICENSES:
- *     1/GPL OR 2/JSEL
- *
- *     1/ GPL
- *     ==================================================================================
- *
- *     IF YOU DECIDE TO CHOOSE THE GPL LICENSE, YOU MUST COMPLY WITH THE FOLLOWING TERMS:
- *
- *     This program is free software: you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation, either version 3 of the License, or
- *     (at your option) any later version.
- *
- *     This program is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with this program. If not, see <http://www.gnu.org/licenses/>.
- *
- *
- *     2/ JSEL - Commercial and Supported Versions of the program
- *     ===================================================================================
- *
- *     IF YOU DECIDE TO CHOOSE THE JSEL LICENSE, YOU MUST COMPLY WITH THE FOLLOWING TERMS:
- *
- *     Alternatively, commercial and supported versions of the program - also known as
- *     Enterprise Distributions - must be used in accordance with the terms and conditions
- *     contained in a separate written agreement between you and Jahia Solutions Group SA.
- *
- *     If you are unsure which license is appropriate for your use,
- *     please contact the sales department at sales@jahia.com.
- */
 package com.jahia.module.fontawesome;
 
 import java.util.Collections;
@@ -65,6 +22,7 @@ public class Prefix {
         result.put("fa-adversal", "fab");
         result.put("fa-affiliatetheme", "fab");
         result.put("fa-air-freshener", "fas");
+        result.put("fa-airbnb", "fab");
         result.put("fa-algolia", "fab");
         result.put("fa-align-center", "fas");
         result.put("fa-align-justify", "fas");
@@ -149,6 +107,7 @@ public class Prefix {
         result.put("fa-battery-half", "fas");
         result.put("fa-battery-quarter", "fas");
         result.put("fa-battery-three-quarters", "fas");
+        result.put("fa-battle-net", "fab");
         result.put("fa-bed", "fas");
         result.put("fa-beer", "fas");
         result.put("fa-behance", "fab");
@@ -186,6 +145,7 @@ public class Prefix {
         result.put("fa-book-open", "fas");
         result.put("fa-book-reader", "fas");
         result.put("fa-bookmark", "fas");
+        result.put("fa-bootstrap", "fab");
         result.put("fa-bowling-ball", "fas");
         result.put("fa-box", "fas");
         result.put("fa-box-open", "fas");
@@ -199,6 +159,7 @@ public class Prefix {
         result.put("fa-broom", "fas");
         result.put("fa-brush", "fas");
         result.put("fa-btc", "fab");
+        result.put("fa-buffer", "fab");
         result.put("fa-bug", "fas");
         result.put("fa-building", "fas");
         result.put("fa-bullhorn", "fas");
@@ -287,6 +248,7 @@ public class Prefix {
         result.put("fa-chevron-up", "fas");
         result.put("fa-child", "fas");
         result.put("fa-chrome", "fab");
+        result.put("fa-chromecast", "fab");
         result.put("fa-church", "fas");
         result.put("fa-circle", "fas");
         result.put("fa-circle-notch", "fas");
@@ -458,6 +420,7 @@ public class Prefix {
         result.put("fa-ethernet", "fas");
         result.put("fa-etsy", "fab");
         result.put("fa-euro-sign", "fas");
+        result.put("fa-evernote", "fab");
         result.put("fa-exchange-alt", "fas");
         result.put("fa-exclamation", "fas");
         result.put("fa-exclamation-circle", "fas");
@@ -718,6 +681,7 @@ public class Prefix {
         result.put("fa-invision", "fab");
         result.put("fa-ioxhost", "fab");
         result.put("fa-italic", "fas");
+        result.put("fa-itch-io", "fab");
         result.put("fa-itunes", "fab");
         result.put("fa-itunes-note", "fab");
         result.put("fa-java", "fab");
@@ -1038,6 +1002,7 @@ public class Prefix {
         result.put("fa-sad-cry", "fas");
         result.put("fa-sad-tear", "fas");
         result.put("fa-safari", "fab");
+        result.put("fa-salesforce", "fab");
         result.put("fa-sass", "fab");
         result.put("fa-satellite", "fas");
         result.put("fa-satellite-dish", "fas");
@@ -1131,6 +1096,7 @@ public class Prefix {
         result.put("fa-spa", "fas");
         result.put("fa-space-shuttle", "fas");
         result.put("fa-speakap", "fab");
+        result.put("fa-speaker-deck", "fab");
         result.put("fa-spider", "fas");
         result.put("fa-spinner", "fas");
         result.put("fa-splotch", "fas");
@@ -1186,6 +1152,7 @@ public class Prefix {
         result.put("fa-swatchbook", "fas");
         result.put("fa-swimmer", "fas");
         result.put("fa-swimming-pool", "fas");
+        result.put("fa-symfony", "fab");
         result.put("fa-synagogue", "fas");
         result.put("fa-sync", "fas");
         result.put("fa-sync-alt", "fas");
@@ -1355,6 +1322,8 @@ public class Prefix {
         result.put("fa-wallet", "fas");
         result.put("fa-warehouse", "fas");
         result.put("fa-water", "fas");
+        result.put("fa-wave-square", "fas");
+        result.put("fa-waze", "fab");
         result.put("fa-weebly", "fab");
         result.put("fa-weibo", "fab");
         result.put("fa-weight", "fas");
@@ -1392,6 +1361,7 @@ public class Prefix {
         result.put("fa-xing-square", "fab");
         result.put("fa-y-combinator", "fab");
         result.put("fa-yahoo", "fab");
+        result.put("fa-yammer", "fab");
         result.put("fa-yandex", "fab");
         result.put("fa-yandex-international", "fab");
         result.put("fa-yarn", "fab");
