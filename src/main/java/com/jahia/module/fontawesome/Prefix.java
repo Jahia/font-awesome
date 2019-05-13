@@ -533,6 +533,7 @@ public class Prefix {
         result.put("fa-gift", "fas");
         result.put("fa-gifts", "fas");
         result.put("fa-git", "fab");
+        result.put("fa-git-alt", "fab");
         result.put("fa-git-square", "fab");
         result.put("fa-github", "fab");
         result.put("fa-github-alt", "fab");
@@ -1108,6 +1109,7 @@ public class Prefix {
         result.put("fa-squarespace", "fab");
         result.put("fa-stack-exchange", "fab");
         result.put("fa-stack-overflow", "fab");
+        result.put("fa-stackpath", "fab");
         result.put("fa-stamp", "fas");
         result.put("fa-star", "fas");
         result.put("fa-star-and-crescent", "fas");
