@@ -175,6 +175,7 @@ public class Prefix {
         result.put("fa-bus", "fas");
         result.put("fa-bus-alt", "fas");
         result.put("fa-business-time", "fas");
+        result.put("fa-buy-n-large", "fab");
         result.put("fa-buysellads", "fab");
         result.put("fa-calculator", "fas");
         result.put("fa-calendar", "fas");
@@ -309,6 +310,7 @@ public class Prefix {
         result.put("fa-cookie-bite", "fas");
         result.put("fa-copy", "fas");
         result.put("fa-copyright", "fas");
+        result.put("fa-cotton-bureau", "fab");
         result.put("fa-couch", "fas");
         result.put("fa-cpanel", "fab");
         result.put("fa-creative-commons", "fab");
@@ -627,6 +629,8 @@ public class Prefix {
         result.put("fa-hanukiah", "fas");
         result.put("fa-hard-hat", "fas");
         result.put("fa-hashtag", "fas");
+        result.put("fa-hat-cowboy", "fas");
+        result.put("fa-hat-cowboy-side", "fas");
         result.put("fa-hat-wizard", "fas");
         result.put("fa-haykal", "fas");
         result.put("fa-hdd", "fas");
@@ -787,6 +791,7 @@ public class Prefix {
         result.put("fa-mask", "fas");
         result.put("fa-mastodon", "fab");
         result.put("fa-maxcdn", "fab");
+        result.put("fa-mdb", "fab");
         result.put("fa-medal", "fas");
         result.put("fa-medapps", "fab");
         result.put("fa-medium", "fab");
@@ -833,6 +838,7 @@ public class Prefix {
         result.put("fa-mosque", "fas");
         result.put("fa-motorcycle", "fas");
         result.put("fa-mountain", "fas");
+        result.put("fa-mouse", "fas");
         result.put("fa-mouse-pointer", "fas");
         result.put("fa-mug-hot", "fas");
         result.put("fa-music", "fas");
@@ -860,6 +866,7 @@ public class Prefix {
         result.put("fa-openid", "fab");
         result.put("fa-opera", "fab");
         result.put("fa-optin-monster", "fab");
+        result.put("fa-orcid", "fab");
         result.put("fa-osi", "fab");
         result.put("fa-otter", "fas");
         result.put("fa-outdent", "fas");
@@ -974,6 +981,7 @@ public class Prefix {
         result.put("fa-readme", "fab");
         result.put("fa-rebel", "fab");
         result.put("fa-receipt", "fas");
+        result.put("fa-record-vinyl", "fas");
         result.put("fa-recycle", "fas");
         result.put("fa-red-river", "fab");
         result.put("fa-reddit", "fab");
@@ -1170,6 +1178,7 @@ public class Prefix {
         result.put("fa-surprise", "fas");
         result.put("fa-suse", "fab");
         result.put("fa-swatchbook", "fas");
+        result.put("fa-swift", "fab");
         result.put("fa-swimmer", "fas");
         result.put("fa-swimming-pool", "fas");
         result.put("fa-symfony", "fab");
@@ -1265,6 +1274,7 @@ public class Prefix {
         result.put("fa-uber", "fab");
         result.put("fa-ubuntu", "fab");
         result.put("fa-uikit", "fab");
+        result.put("fa-umbraco", "fab");
         result.put("fa-umbrella", "fas");
         result.put("fa-umbrella-beach", "fas");
         result.put("fa-underline", "fas");
