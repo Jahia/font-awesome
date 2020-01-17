@@ -50,6 +50,7 @@ import org.jahia.services.content.nodetypes.initializers.ModuleChoiceListInitial
 import org.jahia.services.content.nodetypes.renderer.AbstractChoiceListRenderer;
 import org.jahia.services.content.nodetypes.renderer.ModuleChoiceListRenderer;
 import org.jahia.services.render.RenderContext;
+import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -60,12 +61,12 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-
+@Component(name = "iconInitializer", service = ModuleChoiceListInitializer.class, immediate = true)
 public class IconInitializer extends AbstractChoiceListRenderer implements ModuleChoiceListInitializer, ModuleChoiceListRenderer {
 
     private static final Logger logger = LoggerFactory.getLogger(IconInitializer.class);
 
-    private String key;
+    private String key = "iconInitializer";
 
     /**
      * {@inheritDoc}
@@ -155,6 +156,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-backspace",
             "fa-backward",
             "fa-bacon",
+            "fa-bahai",
             "fa-balance-scale",
             "fa-balance-scale-left",
             "fa-balance-scale-right",
@@ -260,6 +262,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-car-battery",
             "fa-car-crash",
             "fa-car-side",
+            "fa-caravan",
             "fa-caret-down",
             "fa-caret-left",
             "fa-caret-right",
@@ -363,6 +366,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-compact-disc",
             "fa-compass",
             "fa-compress",
+            "fa-compress-alt",
             "fa-compress-arrows-alt",
             "fa-concierge-bell",
             "fa-confluence",
@@ -496,6 +500,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-exclamation-circle",
             "fa-exclamation-triangle",
             "fa-expand",
+            "fa-expand-alt",
             "fa-expand-arrows-alt",
             "fa-expeditedssl",
             "fa-external-link-alt",
@@ -551,6 +556,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-fire-alt",
             "fa-fire-extinguisher",
             "fa-firefox",
+            "fa-firefox-browser",
             "fa-first-aid",
             "fa-first-order",
             "fa-first-order-alt",
@@ -694,7 +700,6 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-hat-cowboy",
             "fa-hat-cowboy-side",
             "fa-hat-wizard",
-            "fa-haykal",
             "fa-hdd",
             "fa-heading",
             "fa-headphones",
@@ -740,6 +745,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-id-badge",
             "fa-id-card",
             "fa-id-card-alt",
+            "fa-ideal",
             "fa-igloo",
             "fa-image",
             "fa-images",
@@ -870,6 +876,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-menorah",
             "fa-mercury",
             "fa-meteor",
+            "fa-microblog",
             "fa-microchip",
             "fa-microphone",
             "fa-microphone-alt",
@@ -983,6 +990,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-pied-piper-alt",
             "fa-pied-piper-hat",
             "fa-pied-piper-pp",
+            "fa-pied-piper-square",
             "fa-piggy-bank",
             "fa-pills",
             "fa-pinterest",
@@ -1307,6 +1315,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-trade-federation",
             "fa-trademark",
             "fa-traffic-light",
+            "fa-trailer",
             "fa-train",
             "fa-tram",
             "fa-transgender",
@@ -1343,6 +1352,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
             "fa-undo",
             "fa-undo-alt",
             "fa-uniregistry",
+            "fa-unity",
             "fa-universal-access",
             "fa-university",
             "fa-unlink",
