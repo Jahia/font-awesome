@@ -1484,14 +1484,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
     public List<ChoiceListValue> getChoiceListValues(ExtendedPropertyDefinition epd, String param, List<ChoiceListValue> values, Locale locale, Map<String, Object> context) {
         ArrayList<ChoiceListValue> results = new ArrayList<>(ICONS.length);
         for (String t : ICONS) {
-            ChoiceListValue value = new ChoiceListValue(t, t);
-            String flagPath = "/img/"+ t + ".png";
-            File f = new File(JahiaContextLoaderListener.getServletContext().getRealPath(flagPath));
-            if (!f.exists()) {
-                flagPath = "/img/fa-question.png";
-            }
-            value.addProperty("image",  Jahia.getContextPath() + flagPath);
-            results.add(value);
+            results.add(new ChoiceListValue(t, t));
         }
         return results;
     }
