@@ -43,6 +43,8 @@
  */
 package com.jahia.initializers;
 
+import org.jahia.bin.Jahia;
+import org.jahia.bin.listeners.JahiaContextLoaderListener;
 import org.jahia.services.content.JCRPropertyWrapper;
 import org.jahia.services.content.nodetypes.ExtendedPropertyDefinition;
 import org.jahia.services.content.nodetypes.initializers.ChoiceListValue;
@@ -56,6 +58,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.jcr.RepositoryException;
 import javax.jcr.Value;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -1479,7 +1482,7 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
 
 
     public List<ChoiceListValue> getChoiceListValues(ExtendedPropertyDefinition epd, String param, List<ChoiceListValue> values, Locale locale, Map<String, Object> context) {
-        ArrayList<ChoiceListValue> results = new ArrayList<ChoiceListValue>();
+        ArrayList<ChoiceListValue> results = new ArrayList<>(ICONS.length);
         for (String t : ICONS) {
             results.add(new ChoiceListValue(t, t));
         }
