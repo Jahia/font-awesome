@@ -347,6 +347,7 @@ public class Prefix {
         result.put("fa-cuttlefish", "fab");
         result.put("fa-d-and-d", "fab");
         result.put("fa-d-and-d-beyond", "fab");
+        result.put("fa-dailymotion", "fab");
         result.put("fa-dashcube", "fab");
         result.put("fa-database", "fas");
         result.put("fa-deaf", "fas");
@@ -694,6 +695,7 @@ public class Prefix {
         result.put("fa-info", "fas");
         result.put("fa-info-circle", "fas");
         result.put("fa-instagram", "fab");
+        result.put("fa-instagram-square", "fab");
         result.put("fa-intercom", "fab");
         result.put("fa-internet-explorer", "fab");
         result.put("fa-invision", "fab");
@@ -827,6 +829,7 @@ public class Prefix {
         result.put("fa-mitten", "fas");
         result.put("fa-mix", "fab");
         result.put("fa-mixcloud", "fab");
+        result.put("fa-mixer", "fab");
         result.put("fa-mizuni", "fab");
         result.put("fa-mobile", "fas");
         result.put("fa-mobile-alt", "fas");
@@ -1062,6 +1065,7 @@ public class Prefix {
         result.put("fa-shipping-fast", "fas");
         result.put("fa-shirtsinbulk", "fab");
         result.put("fa-shoe-prints", "fas");
+        result.put("fa-shopify", "fab");
         result.put("fa-shopping-bag", "fas");
         result.put("fa-shopping-basket", "fas");
         result.put("fa-shopping-cart", "fas");

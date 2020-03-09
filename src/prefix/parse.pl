@@ -53,7 +53,7 @@ print <<EOF;
         if (icon != null) {
             prefix = FA_PREFIX.get(icon);
         }
-        if (prefix.length() == 0) {
+        if (prefix == null || prefix.length() == 0) {
             prefix = "fa";
         }
         return prefix;
