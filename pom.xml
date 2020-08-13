@@ -61,7 +61,7 @@
         <connection>scm:git:git@github.com:Jahia/font-awesome.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/font-awesome.git</developerConnection>
         <url>https://github.com/Jahia/font-awesome</url>
-      <tag>font-awesome-5.12.1</tag>
+      <tag>font-awesome-5.14.0-SNAPSHOT</tag>
   </scm>
 
     <properties>
