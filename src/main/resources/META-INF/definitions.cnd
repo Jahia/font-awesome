@@ -5,7 +5,7 @@
 [famix:component] > jmix:droppableContent, jmix:editorialContent mixin
 
 [famix:faIcon] mixin
- - faIcon (string, choicelist[iconInitializer,resourceBundle,moduleImage='png'])
+ - faIcon (string, choicelist[iconInitializer,resourceBundle])
 
 // deprecated
 [fant:all] > jnt:content

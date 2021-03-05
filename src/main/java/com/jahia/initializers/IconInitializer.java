@@ -43,8 +43,11 @@
  */
 package com.jahia.initializers;
 
+import com.jahia.module.fontawesome.Prefix;
 import org.jahia.bin.Jahia;
 import org.jahia.bin.listeners.JahiaContextLoaderListener;
+import org.jahia.data.templates.JahiaTemplatesPackage;
+import org.jahia.registries.ServicesRegistry;
 import org.jahia.services.content.JCRPropertyWrapper;
 import org.jahia.services.content.nodetypes.ExtendedPropertyDefinition;
 import org.jahia.services.content.nodetypes.initializers.ChoiceListValue;
@@ -55,6 +58,7 @@ import org.jahia.services.render.RenderContext;
 import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.io.Resource;
 
 import javax.jcr.RepositoryException;
 import javax.jcr.Value;
@@ -1542,6 +1546,38 @@ public class IconInitializer extends AbstractChoiceListRenderer implements Modul
         for (String t : ICONS) {
             results.add(new ChoiceListValue(t, t));
         }
+        final JahiaTemplatesPackage template = ServicesRegistry.getInstance().getJahiaTemplateManagerService().getTemplatePackageById(
+                epd.getDeclaringNodeType().getSystemId());
+
+        for (ChoiceListValue value : results) {
+            try {
+                String icon = value.getValue().getString();
+                String iconRaw = icon.replaceAll("fa-","");
+                String prefix = Prefix.getPrefix(icon);
+                String dir = "solid";
+                if ("far".equals(prefix)) {
+                    dir = "regular";
+                } else if ("fab".equals(prefix)) {
+                    dir = "brands";
+                }
+                final Resource imagePath = template.getResource("/svgs/" + dir + "/" + iconRaw + ".svg");
+                if (imagePath != null && imagePath.exists()) {
+                    String s = Jahia.getContextPath();
+                    if (s.equals("/")) {
+                        s = "";
+                    }
+                    value.addProperty("image", s + (template.getRootFolderPath().startsWith("/")?"":"/")+template.getRootFolderPath() + "/svgs/" + dir + "/" + iconRaw + ".svg");
+                } else {
+                    logger.debug("ModuleImageChoiceListInitializerImpl : unable to find image /svgs/" + dir + "/" + iconRaw + ".svg"
+                            + " in module " + template.getName()
+                            + " for property " + epd.getName()
+                            + " for type " + epd.getDeclaringNodeType().getName() );
+                }
+            } catch (RepositoryException e) {
+                logger.error(e.getMessage(), e);
+            }
+        }
+
         return results;
     }
 
