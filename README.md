@@ -27,6 +27,21 @@ First, you will need to add a Maven dependency to your module
   <scope>provided</scope>
 </dependency>
 ```
+Also, in your pom.xml, you will need to add the package `com.jahia.module.fontawesome` in the list of the `Import-Package` of your `maven-bundle-plugin`
+```xml
+<plugins>
+    <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+            <instructions>
+            <Import-Package>com.jahia.module.fontawesome,${jahia.plugin.projectPackageImport},*</Import-Package>
+            </instructions>
+        </configuration>
+    </plugin>
+</plugins>
+```
 Then declare the taglib and use the fa:getPrefix function
 
 ```xml
