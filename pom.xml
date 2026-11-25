@@ -54,7 +54,7 @@
     <groupId>org.jahia.modules</groupId>
     <artifactId>font-awesome</artifactId>
     <name>Font Awesome</name>
-    <version>6.1.6</version>
+    <version>6.1.7-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <description>This is the custom module (Font Awesome) for running on a Digital Factory server.</description>
     <scm>
